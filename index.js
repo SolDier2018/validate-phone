@@ -1,4 +1,6 @@
-var reg = $(this).val().replace(/-/g, '');
+//Номер приходит в формате +7(999) 999-99-99
+
+var reg = $(this).val().replace(/-/g, ''); 
 var reg1 = reg.split('(').join('');
 var reg2 = reg1.split(')').join('');
 var reg3 = reg2.split(' ').join('');
